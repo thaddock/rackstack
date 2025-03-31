@@ -16,9 +16,9 @@ difference () {
     bottomScrewTray (
         u = 12,
         trayWidth = 130,
-        trayDepth = 35,
+        trayDepth = 3,
         trayThickness = 3,
-        frontLipHeight = 126,
+        frontLipHeight = 3,
         backLipHeight = 126,
        // mountPoints = [[15, 15], [15+105, 15],[15, 15+105], [15+105, 15+105]],
         frontThickness = 3,
