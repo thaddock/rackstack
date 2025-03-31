@@ -12,12 +12,12 @@ module traySystem (
 
 // begin config ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-trayU = 2,
+trayU = 4,
 
 // these dimensions are the total base width including padding not usable space. 
 // e.g. 145 baseWidth and 3 sideThickness = 145-(3*2) = 139mm useable space.
-baseWidth = 145,
-baseDepth = 100,
+baseWidth = 180,
+baseDepth = 180,
 
 baseThickness = 3, // tray bottom thickness
 frontThickness = 3, // front plate thickness
@@ -27,17 +27,22 @@ backLipHeight = 2,
 frontLipHeight = 2,
 
 sideSupport = true,
-trayLeftPadding = 10, // extra space between the left rail and tray. configure this to move the tray left/right.
+trayLeftPadding = 0, // extra space between the left rail and tray. configure this to move the tray left/right.
 
 mountPointType = "m3",
 mountPointElevation = 1, // basically standoff height
 
 // add/config standoff coordinates here. Format is [[x,y]]
 mountPoints = [
-    [30,10],
+    [170 - 6.35, 10.16],
+    [170 - (6.35 + 157.48), 10.16+22.86],
+    [170 - 6.35, 10.16 + 154.94],
+    [170 - (6.35 + 157.48), 10.16+157.48],
+    /*[30,10],
     [30+75,10],
     [30,10+75],
     [30+75,10+75],
+    */
 ]
 
 // end config //////////////////////////////////////////////////////////////////////////////////////////////////////////
